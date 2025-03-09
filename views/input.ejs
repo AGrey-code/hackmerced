@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width"/>
+  <title>Real Estate Site - Input Form</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <h1>Enter Your Criteria</h1>
+
+  <p>Fill out the form to find the best match!</p>
+
+  <!-- Action is /submit, method=POST,
+       so your Express route can handle it (app.post('/submit', ...)) -->
+  <form action="/submit" method="POST">
+    <label for="Location">Enter Location:</label><br>
+    <input type="text" id="Location" name="Location"><br><br>
+
+    <label for="distance">Enter Radius From Location:</label><br>
+    <input type="number" id="distance" name="distance"><br><br>
+
+    <label for="Budget">Enter Your Current Budget:</label><br>
+    <input type="number" id="Budget" name="Budget"><br><br>
+
+    <label for="Price">Enter Your Desired Price:</label><br>
+    <input type="number" id="Price" name="Price"><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <p><a href="/">Back to Home</a></p>
+</body>
+</html>
