@@ -5,3 +5,9 @@ body{
 div1{
     margin-left: 100;
 }
+p{
+    background-color:rgb(rgb(255, 136, 136));
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
